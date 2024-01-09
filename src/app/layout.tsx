@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 import "../styles/globals.css";
 
 // const nunito = Nunito({ subsets: ["latin"], display: "swap" });
-export const lora = Lora({ subsets: ["latin"], display: "swap" });
+// export const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 import SessionProvider from "@/providers/session-provider";
 import ToastProvider from "@/providers/toast-provider";

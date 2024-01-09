@@ -1,4 +1,5 @@
 "use client";
+import { Lora } from "next/font/google";
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +9,7 @@ import "./hero-section.css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import { cn } from "@/lib/utils";
-import { lora } from "@/app/layout";
+// import { lora } from "@/app/layout";
 
 const creatures = [
   {
@@ -40,6 +41,8 @@ const creatures = [
     image: "/images/rabbit.png",
   },
 ];
+
+const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 const HsSecondPhotos = () => {
   return (

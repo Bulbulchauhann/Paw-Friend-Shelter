@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { Lora } from "next/font/google";
 
-import { lora } from "@/app/layout";
+// import { lora } from "@/app/layout";
 import { cn } from "@/lib/utils";
 
 import { NavMenu } from "./nav-menu";
+
+const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 const Navbar = () => {
   return (

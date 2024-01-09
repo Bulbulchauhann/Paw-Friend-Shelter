@@ -1,7 +1,11 @@
+import { Lora } from "next/font/google";
+
 import { cn } from "@/lib/utils";
-import { lora } from "@/app/layout";
+// import { lora } from "@/app/layout";
 import { BookHeart, CircleDollarSign, CreditCard } from "lucide-react";
 import VolunteerForm from "./volunteer-form";
+
+const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 const SheltorSupportSection = () => {
   return (
@@ -58,7 +62,8 @@ const SheltorSupportSection = () => {
               </div>
 
               <p className="max-w-xs">
-                You can join our team and help with animal care, cleaning, and other tasks
+                You can join our team and help with animal care, cleaning, and
+                other tasks
               </p>
             </div>
 

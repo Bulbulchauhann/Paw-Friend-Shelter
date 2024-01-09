@@ -1,6 +1,11 @@
-import { lora } from "@/app/layout";
+import { Lora } from "next/font/google";
+
+// import { lora } from "@/app/layout";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+
+const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 const aboutData = [
   {

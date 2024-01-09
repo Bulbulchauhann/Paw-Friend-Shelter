@@ -1,7 +1,11 @@
-import { lora } from "@/app/layout";
+import { Lora } from "next/font/google";
+
+// import { lora } from "@/app/layout";
 import { cn } from "@/lib/utils";
 import HeroSectionFirstCTAGroup from "./hs-first-cta-group";
 import HsSecondPhotos from "./hs-second-photos";
+
+const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 const HeroSection = () => {
   return (

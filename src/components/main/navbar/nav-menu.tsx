@@ -1,5 +1,6 @@
 "use client";
 
+import { Lora } from "next/font/google";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -12,8 +13,10 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet/sheet";
-import { lora } from "@/app/layout";
+// import { lora } from "@/app/layout";
 import { cn } from "@/lib/utils";
+
+const lora = Lora({ subsets: ["latin"], display: "swap" });
 
 const menuItems = [
   {
